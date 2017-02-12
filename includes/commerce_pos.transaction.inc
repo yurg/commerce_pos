@@ -288,7 +288,6 @@ function commerce_pos_transaction_form(&$form, &$form_state, $transaction_type) 
         '#markup' => '</div>',
       );
 
-
       $line_item_element['add_remove_wrapper_open'] = array(
         '#markup' => '<div class="add-remove-wrapper line-item-col">',
       );
