@@ -200,12 +200,13 @@ class CommercePosTransactionBaseActions extends CommercePosTransactionBase imple
       $line_item->commerce_pricing_attributes = serialize(array());
     }
 
+ /*
     if (module_exists('commerce_tax')) {
       foreach (commerce_tax_types() as $name => $type) {
         commerce_tax_calculate_by_type($line_item, $name);
       }
     }
-
+*/
     return $this->addLineItem($line_item, $combine);
   }
 
